@@ -1,0 +1,123 @@
+<div align="center">
+
+<style>
+  body {
+    background: #faf6f7;
+    font-family: Georgia, serif;
+  }
+
+  .envelope {
+    width: 300px;
+    height: 190px;
+    background: #e6c2cc;
+    margin: 90px auto 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.5s;
+  }
+
+  .envelope:hover {
+    transform: scale(1.02);
+  }
+
+  .flap {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-top: 95px solid #d8a9b6;
+  }
+
+  .open-text {
+    position: absolute;
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: #5b2b38;
+    font-weight: bold;
+  }
+
+  .letter {
+    display: none;
+    max-width: 550px;
+    background: #ffffff;
+    padding: 35px;
+    margin: 40px auto;
+    border-radius: 14px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+    color: #3f2a31;
+    text-align: left;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .invite {
+    margin-top: 30px;
+    padding: 22px;
+    background: #f3e4e8;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+</style>
+
+<div class="envelope"
+     onclick="document.getElementById('letter').style.display='block'; this.style.display='none';">
+  <div class="flap"></div>
+  <div class="open-text">Ábreme</div>
+</div>
+
+<div id="letter" class="letter">
+  <div class="title">Para ti, mi amor</div>
+
+  <div class="text">
+    Mi amor,<br><br>
+
+    Si estás leyendo esto es porque quiero invitarte
+    a detener el día conmigo.
+    No es algo grande ni ruidoso,
+    es algo nuestro.<br><br>
+
+    Princesa, contigo aprendí que el amor
+    no necesita explicarse,
+    solo sentirse.
+    Que basta una mirada tuya
+    para que el mundo se acomode
+    y que tu risa tiene la costumbre
+    de quedarse conmigo todo el día.<br><br>
+
+    Mi colochita linda, mi niña,
+    hoy no quiero promesas largas
+    ni palabras difíciles,
+    solo quiero sentarme frente a ti,
+    verte sonreír,
+    escucharte hablar
+    y agradecerle a la vida
+    por ponerte en mi camino.
+  </div>
+
+  <div class="invite">
+    <strong>Invitación</strong><br><br>
+    Te invito a una cena esta noche.<br>
+    Nada elegante, nada perfecto.<br>
+    Solo tú y yo,<br>
+    compartiendo tiempo,<br>
+    como lo hacen las personas
+    que se eligen todos los días.<br><br>
+
+    Hoy, cuando caiga la noche.
+  </div>
+</div>
+
+</div>
